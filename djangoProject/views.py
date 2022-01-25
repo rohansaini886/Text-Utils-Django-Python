@@ -1,5 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+def index(request):
+    # params = {'name':'Hello', 'age':'World!'}
+    return render(request, 'index.html')
+    # return HttpResponse("Home")
 
 def analyze(request):
     #Get the text
